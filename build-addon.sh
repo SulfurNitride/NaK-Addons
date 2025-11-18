@@ -31,7 +31,10 @@ find "$TEMP_DIR" -name "__pycache__" -type d -exec rm -rf {} + 2>/dev/null || tr
 cd "$TEMP_DIR"
 zip -r "../$OUTPUT_FILE" ./*
 cd - > /dev/null
-mv "$TEMP_DIR/../$OUTPUT_FILE" "./$OUTPUT_FILE"
+
+# Create addons directory if it doesn't exist
+mkdir -p addons
+mv "$TEMP_DIR/../$OUTPUT_FILE" "./addons/$OUTPUT_FILE"
 rm -rf "$TEMP_DIR"
 
-echo "✓ Built: $OUTPUT_FILE"
+echo "✓ Built: addons/$OUTPUT_FILE"
