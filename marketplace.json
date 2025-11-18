@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "addons": [
+    {
+      "id": "spore-mod-loader",
+      "name": "Spore Mod Loader",
+      "version": "1.0.0",
+      "description": "Support for Spore ModAPI Launcher Kit - runs the official installer with Proton to enable mod management for Spore. Creates launch scripts and symlinks for easy access.",
+      "author": "SulfurNitride",
+      "homepage": "https://github.com/Spore-Community/modapi-launcher-kit",
+      "requires_nak_version": ">=4.0.0",
+      "asset": "spore-mod-loader-1.0.0.zip"
+    }
+  ]
+}
